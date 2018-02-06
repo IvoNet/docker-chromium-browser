@@ -19,7 +19,7 @@ See [this](https://www.ivonet.nl) blog post
 ## examples
 
 ```bash
-docker run -d \
+docker run -d \ 
            --rm \
            --privileged \
            --name chrome \
