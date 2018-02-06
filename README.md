@@ -13,7 +13,7 @@ An option is to use an isolated browser. How to do this... read on
 
 Docker and Nas to the rescue (and a few more things).
 
-See [this](https://www.ivonet.nl) blog post
+See [this](https://www.ivonet.nl) blog post.
 
 
 ## examples
