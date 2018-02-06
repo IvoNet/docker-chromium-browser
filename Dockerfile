@@ -39,6 +39,7 @@ RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty main universe restricted' 
 
 WORKDIR /nobody
 RUN mkdir -p /etc/my_init.d && \
+    mkdir -p /nobody/.config/pulse && \
     echo 'admin ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 ADD firstrun.sh /etc/my_init.d/firstrun.sh
 RUN chmod +x /etc/my_init.d/firstrun.sh
@@ -51,7 +52,7 @@ COPY startapp.sh /startapp.sh
 ##         EXPORTS AND VOLUMES         ##
 #########################################
 # Gui App Name default is "GUI_APPLICATION"
-ENV APP_NAME="browser"
+ENV APP_NAME="Chromium browser"
 ENV HOME /nobody
-VOLUME ["/config"]
+VOLUME ["/nobody"]
 EXPOSE 3389 8080

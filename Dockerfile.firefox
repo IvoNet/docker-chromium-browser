@@ -50,8 +50,7 @@ COPY startapp.sh /startapp.sh
 #########################################
 ##         EXPORTS AND VOLUMES         ##
 #########################################
-# Gui App Name default is "GUI_APPLICATION"
-ENV APP_NAME="firefox"
+ENV APP_NAME="Chromium browser"
 ENV HOME /nobody
 VOLUME ["/config"]
 EXPOSE 3389 8080
