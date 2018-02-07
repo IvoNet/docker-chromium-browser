@@ -53,6 +53,7 @@ COPY startapp.sh /startapp.sh
 #########################################
 # Gui App Name default is "GUI_APPLICATION"
 ENV APP_NAME="Chromium browser"
+ENV START_URL="https://duckduckgo.com/"
 ENV HOME /nobody
 VOLUME ["/nobody"]
 EXPOSE 3389 8080

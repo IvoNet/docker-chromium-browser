@@ -2,8 +2,6 @@
 
 [[ -f /tmp/.X1-lock ]] && rm /tmp/.X1-lock && echo "X1-lock found, deleting"
 
-# TODO Add Edge support
-
 if [ ! "$EDGE" = "1" ]; then
   echo "EDGE not requested, keeping current version"
 else
