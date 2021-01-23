@@ -25,10 +25,6 @@ CMD ["/sbin/my_init"]
 ##    REPOSITORIES AND DEPENDENCIES    ##
 #########################################
 RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty main universe restricted' > /etc/apt/sources.list && \
-    echo 'deb http://archive.ubuntu.com/ubuntu trusty-updates main universe restricted' >> /etc/apt/sources.list && \
-
-# Install packages needed for app
-
     export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
     apt-get install -y chromium-browser
